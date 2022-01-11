@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SIMFILES=( "./tb.v" "./top.v" )
-#SIMFILES+=( "./nios_system_sdram.v" )
+SIMFILES+=( "./uart.v" "uart_rx.v" "uart_tx.v" )
 
 IVERILOG='iverilog'
 SIMFLAGS='-DSIMULATION'
