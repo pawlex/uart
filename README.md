@@ -1,17 +1,8 @@
-# BASIC Verilog and System Verilog Simulation Environment
-## Using icarus verilog and gtkwave
+## UART with AXI interface and simulation environment
 
 ### Components
-tb.v : test bench stimuli
+- uart.v - top level
+- uart_tx.v tx side
+- uart_rx.v rx side
 
-top.v: top level module
-
-compile: compiles and runs simulation and launches gtk-wave with the output .vcd
-### Requirements
-Linux env
-
-Icarus verilog compiler [apt-get install iverilog]
-
-GTKWAVE [apt-get install gtkwave]
-
-![gtkwave](gtkwave.png)
+![waveform](uart_loopback.png)
